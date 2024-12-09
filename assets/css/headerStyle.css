@@ -127,8 +127,9 @@ header {
         font-weight: 600;
         color: #fff;
         padding: 15px 10%;
-        font-size: 25px;
-        width: 250px;
+        font-size: 20px;
+        width: 200px;
+        border-radius: 8px;
     }
 
     .mobile-menu-itens a:hover {

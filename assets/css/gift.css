@@ -74,7 +74,7 @@
 
     .gift-info {
         max-width: 25%;
-        min-height: 200px;
+        min-height: 240px;
     }
 
     .gift-info img {
@@ -82,12 +82,20 @@
     }
 
     .section-title {
-        margin: 0;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 1040px) {
     .gift-info {
         max-width: 90%;
+    }
+
+    .container-gifts {
+        padding: 2rem;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
     }
 }
