@@ -1,0 +1,85 @@
+.christmas-section {
+    display: flex;
+    padding: 76px 20%;
+    min-height: 100vh;
+}
+
+#christmas-tree {
+    width: 100%;
+}
+
+#christmas-tree img {
+    min-width: 90%;
+    height: auto;
+}
+
+#text-christmas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+    padding: 85px 3%;
+}
+
+#button-christmas {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    color: white;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+#button-christmas:hover {
+    background-color: #b93434;
+}
+
+.christmas-section .title {
+    font-size: 40px;
+}
+
+.christmas-section .subtitle {
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
+.letter {
+    color: #ffc30e;
+}
+
+.description {
+    margin-bottom: 10%;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+    .christmas-section {
+        flex-direction: column;
+        align-items: center;
+        padding: calc(94px - 2px) 15%;
+    }
+
+    #christmas-tree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #christmas-tree img {
+        min-width: 100%;
+    }
+
+    #text-christmas {
+        min-width: 100%;
+        align-items: center;
+        display: flex;
+        padding: 4px 10%;
+    }
+}
