@@ -86,18 +86,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1040px) {
-    .recipe {
-        min-width: 100%;
-    }
 
-    #receita-completa {
-        background-color: rgb(255, 255, 255);
-        transform: translate(-50%, -50%);
-        min-width: 70%;
-        position: fixed;
-    }
-}
 
 @media screen and (max-width: 1600px) {
     .recipe {
@@ -107,5 +96,18 @@
 
     .recipes-div {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .recipe {
+        min-width: 70%;
+    }
+
+    #receita-completa {
+        background-color: rgb(255, 255, 255);
+        transform: translate(-50%, -50%);
+        min-width: 70%;
+        position: fixed;
     }
 }

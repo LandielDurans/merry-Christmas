@@ -66,12 +66,6 @@
     text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 1040px) {
-    .gift-info {
-        max-width: 120%;
-    }
-}
-
 @media screen and (max-width: 1600px) {
 
     .painel-gift {
@@ -87,8 +81,13 @@
         max-width: 20%;
     }
 
-    .section-title{
+    .section-title {
         margin: 0;
     }
+}
 
+@media screen and (max-width: 1040px) {
+    .gift-info {
+        max-width: 90%;
+    }
 }
