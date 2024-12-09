@@ -84,7 +84,7 @@ sr.reveal('.recipes-div', {
 })
 
 const btn = document.querySelectorAll('.recipe button')
-btn.forEach(button => {
+btn.forEach(button => { // função para percorrer os recipes e exibirem as receitas
     button.addEventListener('click', () => {
         const existingDiv = document.querySelector('#receita-completa');
 
@@ -165,7 +165,7 @@ btn.forEach(button => {
     })
 })
 
-const backToTop = document.querySelector('.back-to-top')
+const backToTop = document.querySelector('.back-to-top') // Função para retornar ao topo da página
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
