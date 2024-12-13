@@ -106,8 +106,8 @@
 
     #receita-completa {
         background-color: rgb(255, 255, 255);
-        transform: translate(-50%, -50%);
-        min-width: 70%;
+        transform: translate(-50%, -40%);
+        min-width: 790%;
         position: fixed;
     }
 }
