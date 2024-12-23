@@ -86,7 +86,10 @@
     cursor: pointer;
 }
 
-
+.title-recipes h2{
+    font-size: 36px;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 1600px) {
     .recipe {
