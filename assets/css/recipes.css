@@ -111,8 +111,8 @@
         min-height: 240px;
     }
 
-    .img-recipe{
-        display: block;
+    .img-recipe {
+        display: none;
     }
 
     .recipes-div {
@@ -125,7 +125,7 @@
         min-width: 100%;
     }
 
-    .img-recipe{
+    .img-recipe {
         display: none;
     }
 
@@ -143,11 +143,31 @@
         min-width: 23%;
     }
 
-    .img-recipe{
+    .img-recipe {
         display: block;
+    }
+
+    .img-recipe:hover {
+        animation: rotateRecipe 2s;
     }
 
     .recipes-div {
         padding: 0 10%;
+    }
+}
+
+@keyframes rotateRecipe {
+    0% { rotate: 0deg;    }
+
+    30% {
+        rotate: 25deg;
+    }
+
+    60% {
+        rotate: -25deg;
+    }
+
+    100% {
+        rotate: 0deg;
     }
 }

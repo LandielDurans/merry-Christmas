@@ -2,21 +2,26 @@ const menuBars = document.querySelector('.mobile-button-menu')
 const mobileMenu = document.querySelector('.mobile-menu')
 const content = document.querySelector('#content')
 const links = document.querySelectorAll('.mobile-menu-itens a')
+const bodyPage = document.querySelector('body')
 
 menuBars.addEventListener('click', menuOpen)
 
 function menuOpen() {
     if (mobileMenu.classList.toggle('active')) {
         menuBars.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+        bodyPage.style.overflow = 'hidden'
     } else {
         menuBars.innerHTML = `<i class="fa-solid fa-bars"></i>`
+        bodyPage.style.overflow = 'auto'
     }
     content.classList.toggle('blurred')
 }
 
+
 links.forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('active')
+        bodyPage.style.overflow = 'auto'
         content.classList.remove('blurred')
         menuBars.innerHTML = `<i class="fa-solid fa-bars"></i>`
         setTimeout(() => {
@@ -165,7 +170,7 @@ btn.forEach(button => { // função para percorrer os recipes e exibirem as rece
     })
 })
 
-const backToTop = document.querySelector('.back-to-top') // Função para retornar ao topo da página
+const backToTop = document.querySelector('.back-to-top')
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
