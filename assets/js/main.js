@@ -17,7 +17,6 @@ function menuOpen() {
     content.classList.toggle('blurred')
 }
 
-
 links.forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('active')
