@@ -57,7 +57,7 @@
 .text-info {
     padding: 2%;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .gift-info .text-info {
@@ -67,7 +67,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-
     .painel-gift {
         padding: 0;
     }
@@ -97,5 +96,17 @@
 
     .section-title {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 2550px) {
+    .gift-info{
+        min-height: 450px;
+        max-width: 28%;
+    }
+
+    .text-info{
+        font-size: 20px;
+        font-weight: 600;
     }
 }

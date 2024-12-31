@@ -36,18 +36,19 @@
     padding: 1rem;
     border: 1px solid black;
     box-shadow: -2px 4px 0 #b93737, -6px 9px 0 #6d1515;
+    position: relative;
 }
 
 .recipe h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 5%;
     color: #FFFFFF;
     text-align: center;
 }
 
 .recipe button {
-    height: 2.2rem;
-    font-size: 15px;
+    height: 3.2rem;
+    font-size: 17px;
     font-weight: 600;
     border-radius: 5px;
     border: none;
@@ -55,6 +56,10 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.recipe button:hover {
+    background-color: #dadada;
 }
 
 #receita-completa {
@@ -86,7 +91,16 @@
     cursor: pointer;
 }
 
-.title-recipes h2{
+.img-recipe {
+    position: absolute;
+    max-height: 9rem;
+    top: 10px;
+    transform: rotate(340deg);
+    right: 25px;
+    display: none;
+}
+
+.title-recipes h2 {
     font-size: 36px;
     font-weight: 600;
 }
@@ -95,6 +109,10 @@
     .recipe {
         min-width: 20%;
         min-height: 240px;
+    }
+
+    .img-recipe{
+        display: block;
     }
 
     .recipes-div {
@@ -107,10 +125,29 @@
         min-width: 100%;
     }
 
+    .img-recipe{
+        display: none;
+    }
+
     #receita-completa {
         background-color: rgb(255, 255, 255);
         transform: translate(-50%, -40%);
         min-width: 90%;
         position: fixed;
+    }
+}
+
+@media screen and (min-width: 2550px) {
+    .recipe {
+        min-height: 520px;
+        min-width: 23%;
+    }
+
+    .img-recipe{
+        display: block;
+    }
+
+    .recipes-div {
+        padding: 0 10%;
     }
 }

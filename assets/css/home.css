@@ -82,4 +82,35 @@
         display: flex;
         padding: 4px 10%;
     }
+
+    .description{
+        font-size: 24px;
+        margin: 10% 0 15% 0;
+    }
+
+    #button-christmas{
+        height: 3.2rem;
+        width: 12rem;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 2550px) {
+    .christmas-section{
+    padding: 76px 18%;
+    }
+
+    .christmas-section .title,
+    .christmas-section .subtitle {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 30px;
+    }
+
+    #button-christmas{
+        width: 20rem;
+        font-size: 25px;
+    }
 }
